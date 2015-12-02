@@ -1,18 +1,18 @@
+
 void setup(){
   size(800,600);
 }
 
 void draw(){
-  drawARandomCircle();
+  DrawARandomCircle();
   if(mousePressed){
-    drawACircleAt(mouseX,mouseY);
+    DrawACircleAt(mouseX,mouseY);
   }
   if(keyPressed){
-    drawACircleAt(width/2,height/2);
+    DrawACircleAt(width/2,height/2);
   }
-}
 
-void drawARandomCircle(){ 
+void DrawARandomCircle(){ 
   float diam = random (5,50);
   fill(0,random(255),random(100,255));
   ellipse(random(width),random(height),diam,diam);
@@ -23,9 +23,8 @@ void drawACircleAt(float x, float y){   //float x & y revert back to mouseX and 
   fill(x,y,25,25);
 }
 
-
 /*********************************
-how to define function: dataType name (parmeters){
+how to define function: dataType name (parameters- that are not included in code){
   block of code
 }
 **********************************/
