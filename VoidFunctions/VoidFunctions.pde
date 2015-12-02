@@ -1,30 +1,25 @@
-
-void setup(){
-  size(800,600);
+float fill = random(100);
+void setup() {
+  size(800, 600);
 }
 
-void draw(){
-  DrawARandomCircle();
-  if(mousePressed){
-    DrawACircleAt(mouseX,mouseY);
-  }
-  if(keyPressed){
-    DrawACircleAt(width/2,height/2);
-  }
-
-void DrawARandomCircle(){ 
-  float diam = random (5,50);
-  fill(0,random(255),random(100,255));
-  ellipse(random(width),random(height),diam,diam);
+void draw() {
+  DrawABlueSquare();
+  DrawACircle(fill);
 }
 
-void drawACircleAt(float x, float y){   //float x & y revert back to mouseX and mouseY
-  fill(255);
-  fill(x,y,25,25);
+void DrawABlueSquare() {
+  fill(#082EFF);
+  rect(375, 275, 50, 50);
 }
 
+void DrawACircle(float fill){
+  fill(random(100));
+  ellipse(mouseX,mouseY,30,30);
+}
+  
 /*********************************
-how to define function: dataType name (parameters- that are not included in code){
-  block of code
-}
-**********************************/
+ how to define function: dataType name (parameters- that are not included in code){
+ block of code
+ }
+ **********************************/
