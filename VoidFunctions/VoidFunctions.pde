@@ -3,14 +3,15 @@ void setup() {
 }
 
 void draw() {
-  DrawABlueSquare();
+  background(0);
+  DrawABlueSquare(375,275);
   DrawACircle(100,0,200);
   DrawATriangle(150);
 }
 
-void DrawABlueSquare() {
+void DrawABlueSquare(float x, float y) {
   fill(#082EFF);
-  rect(375, 275, 50, 50);
+  rect(x, y, 50, 50);
 }
 
 void DrawACircle(float red, float green, float blue){
