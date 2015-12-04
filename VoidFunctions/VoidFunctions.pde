@@ -1,11 +1,10 @@
-float fill = random(100);
 void setup() {
   size(800, 600);
 }
 
 void draw() {
   DrawABlueSquare();
-  DrawACircle(fill);
+  DrawACircle(100,0,200);
 }
 
 void DrawABlueSquare() {
@@ -13,8 +12,8 @@ void DrawABlueSquare() {
   rect(375, 275, 50, 50);
 }
 
-void DrawACircle(float fill){
-  fill(random(100));
+void DrawACircle(float red, float green, float blue){
+  fill(red,green,blue);
   ellipse(mouseX,mouseY,30,30);
 }
   
